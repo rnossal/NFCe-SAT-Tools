@@ -1,0 +1,8 @@
+//Usar filter para listar o que eu quero (status da nota), isso vai ficar guardado tudo num obj com as infos que eu quero (num, total, chave, status, ...)
+/*
+repesentação de como seria o filte com mais de uma opção (segundo meu irmão, não sei se funciona):
+	if(infos.indexOf(opt1) != -1 && objs.opt1 == o que tem em opt1) return true;
+	if(infos.indexOf(opt2) != -1 && objs.opt2 == o que tem em opt2) return true;
+
+	return false;
+*/

@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	background: #fafafa;
+	color: #404040;
+}
+input[type=button], button {
+	border: 0;
+	font-size: 12px;
+	border-radius: 2px;
+	margin: 2px;
+	padding: 10px 15px 10px 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	box-shadow: inset 0 1px 0 #ebebeb;
+	background: #2196F3;
+	transition: .2s ease-out;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+input[type=button]:hover, button:hover {
+	background: #42A5F5;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+input[type=button]:active, button:active {
+	background: #1E88E5;
+}
+.icon-calculator,
+.icon-search {
+	margin-right: 5px;
+}
+#method {
+	padding: 10px;
+	overflow: hidden;
+}
+#method * {
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	user-select: none;
+	-webkit-user-select: none;
+}
+#result {
+	font-family: monospace;
+	margin: 10px 2px 2px 2px;
+	padding: 15px;
+	background: #546e7a;
+	width: 401px;
+	border-radius: 2px;
+	color: #ffab40;
+	opacity: 0;
+	transition: .2s ease-out;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+input[type=checkbox] {
+	display: none;
+}
+input[type=checkbox] + label {
+	margin: 5px;
+	position: relative;
+	display: table;
+	height: 10px;
+	width: 50px;
+	background: #898989;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+input[type=checkbox] + label:after {
+	position: absolute;
+	left: -2px;
+	top: -6px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	background: #fff;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+	content: '';
+	transition: all 0.3s ease;
+	border: 1px solid #B3E5FC;
+}
+input[type=checkbox] + label:active:after {
+	transform: scale(1.15, 0.85);
+}
+input[type=checkbox]:checked ~ label:after {
+	left: 33px;
+}
+
+/* parte que cuida do menu */
+.menu {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	visibility: hidden;
+	background: red;
+}
+.content-menu {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	visibility: hidden;
+	z-index: 2;
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transition: opacity .15s ease-in-out .2s;
+}
+.content-menu.content-visible {
+	visibility: visible;
+	opacity: 1;
+}
+.menu-hamburger, .menu-bg{
+	visibility: visible;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+.menu-hamburger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: #2196F3;
+	transition: background 0.2s ease-in-out;
+	z-index: 3;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.menu-bg {
+	z-index: 1;
+	background: #2196F3;
+	transition: all .3s ease-in-out;
+}
+.menu-bg.menu-visible {
+	background: white;
+	transform: scale(90);
+}
+.menu-close {
+	background: tomato;
+}
+.amb {
+	width: 22px;
+}
+.traces {
+	width: 22px;
+	height: 3px;
+	margin: 0 0 3px 0;
+	background: white;
+	transition: all .2s ease-out;
+}
+.menu-close .traces:nth-child(1) {
+	transform: translate(0px, 7px) rotate(-45deg);
+}
+.menu-close .traces:nth-child(2) {
+	opacity: 0;
+}
+.menu-close .traces:nth-child(3) {
+	transform: translate(0, -5px) rotate(45deg);
+}
