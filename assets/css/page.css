@@ -6,6 +6,9 @@ body {
 	background: #fafafa;
 	color: #404040;
 }
+body.hidden {
+	overflow: hidden;
+}
 input[type=button], button {
 	border: 0;
 	font-size: 12px;

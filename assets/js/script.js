@@ -106,6 +106,7 @@ var bg = document.querySelector('.menu-bg'),
 	contentMenu = document.querySelector('.content-menu');
 
 function toggleMenu(evt) {
+	document.body.classList.toggle('hidden');
 	bg.classList.toggle('menu-visible');
 	contentMenu.classList.toggle('content-visible');
 	menuHamburger.classList.toggle('menu-close');
