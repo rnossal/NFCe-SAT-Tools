@@ -9,4 +9,4 @@ Pode ser acessado no link [NFCe/SAT Tools]
 Projeto feito com carinho por: [Rafael Nossal]
 
 [Rafael Nossal]:http://about.me/rnossal
-[NFCe/SAT Tools]: http://rnossal.github.io/NFCe-SAT-Tools/
+[NFCe/SAT Tools]: http://rnossal.github.io/nfce-sat-tools/
