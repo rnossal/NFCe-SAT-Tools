@@ -1,6 +1,6 @@
 # NFCe/SAT Tools
 
-######Um simples leitor de XML de NFC-e e SAT para cálculo de totais e listagem de números de nota (até o momento).
+###### Um simples leitor de XML de NFC-e e SAT para cálculo de totais e listagem de números de nota (até o momento).
 
 ---
 
